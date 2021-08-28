@@ -5,31 +5,11 @@
     <title>Title</title>
     <link href="https://form.kintoneapp.com/static/css/outside-form.css" rel="stylesheet" type="text/css" charset="UTF-8">
     <script>
+      var parent = getElementById("app");
+      var p = document.createElement("p");
+      parent.appendChild(p)
       console.log(window);
-      // ----------------------------
-      // 追加する要素を作成します
-      // ----------------------------
-      var newElement = document.createElement("p"); // p要素作成
-      var newContent = document.createTextNode("子要素２"); // テキストノードを作成
-      newElement.appendChild(newContent); // p要素にテキストノードを追加
-      newElement.setAttribute("id","child-p2"); // p要素にidを設定
-
-      // ----------------------------
-      // 子要素１の後に追加します
-      // ----------------------------
-      // 親要素（div）への参照を取得
-      var parentDiv = document.getElementById("app");
-
-      // 子要素１への参照を取得
-      var childP1 = document.getElementById("child-p1");
-
-      // 追加
-      parentDiv.insertBefore(newElement, childP1.nextSibling);
-      
-//      var parentDiv = document.getelementById("app");
-      console.log(document)
     </script>
-  
   </head>
   <body>
     <div id="app"></div>
