@@ -4,7 +4,6 @@
   fb.events.form.mounted = [function (state) {
     // フォームのコンテンツ部分の要素を取得します
     var formContent = document.getElementsByClassName('fb-content')[0];
-    console.log(formContent);
 
     // ボタンを作成します
     var submitButton = document.createElement('input');
@@ -15,6 +14,7 @@
 
     // 作成したボタンをフォームのコンテンツ部分の要素の先頭に追加します
     formContent.insertBefore(submitButton, formContent.firstChild);
+    console.log(formContent);
 
     return state;
   }];
