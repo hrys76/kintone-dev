@@ -3,6 +3,7 @@
 
   fb.events.form.created = [function (state) {
     console.log(state);
+    console.log('test');
 //    state.form.title = 'edit form title';
 //    state.fields[0].hide = true;
 //    state.record.string1.value = 'edit string data';
